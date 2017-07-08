@@ -3,7 +3,7 @@ set -e
 
 # dependencies
 sudo apt-get update
-sudo apt-get install -y --no-install-recommends curl git build-essential gdb gnupg python python-pip libpython-dev python-qt4 cmake
+sudo apt-get install -y --no-install-recommends curl git build-essential gdb gnupg python python-pip libpython-dev python-qt4 cmake virtualenvwrapper libffi-dev
 
 # vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle
@@ -66,3 +66,6 @@ sudo pip install ropgadget
 
 # pwntools
 sudo pip install pwntools
+
+# angr
+sudo pip install angr
