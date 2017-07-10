@@ -3,11 +3,11 @@
 
 Vagrant.configure(2) do |config|
   config.vm.define "ctf", primary: true  do |ctf|
-    ctf.vm.box = "ubuntu/trusty64"
+    ctf.vm.box = "ubuntu/zesty64"
   end
 
   config.vm.define "ctf32" do |ctf32|
-    ctf32.vm.box = "ubuntu/trusty32"
+    ctf32.vm.box = "ubuntu/zesty32"
   end
 
   config.vm.provider "virtualbox" do |vb|
